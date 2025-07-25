@@ -1,0 +1,34 @@
+{
+  "name": "keyflip",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Smart clipboard tool to flip text between Hebrew and English layouts.",
+  "author": "rlzuk",
+  "scripts": {
+    "start": "electron ..",
+    "rebuild": "electron-rebuild",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6"
+    
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.9",
+    "electron-builder": "^24.13.2",
+    "electron": "^29.0.0"
+  },
+  "build": {
+    "appId": "com.keyflip.app",
+    "productName": "KeyFlip",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}

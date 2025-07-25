@@ -1,0 +1,9 @@
+/keyflip-JS/dist
+/keyflip-JS/node_modules
+/keyflip-PY/dist
+/keyflip-PY/build
+/keyflip-PY/keyflip.spec
+.DS_Store
+*.log
+*.zip
+*.idea
